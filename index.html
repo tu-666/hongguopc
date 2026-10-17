@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>红果短剧电脑版官方下载_红果短剧PC端最新安装包免费获取_高清大屏畅看</title>
+    <meta name="keywords" content="hongguo-desktop-releases，红果短剧，红果短剧电脑版，红果短剧 PC 端下载，短剧 APP 电脑版，免费短剧软件下载，Windows 短剧客户端" />
+    <meta name="description" content="hongguo-desktop-releases红果短剧 PC 端官方下载站，提供最新版红果短剧电脑版安装包免费下载，海量热门短剧高清免费看，支持全系列 Windows 系统安装，附详细安装使用教程与常见问题解答。" />
+    
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            900: '#881337',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 引入 Phosphor Icons 作为现代图标库 -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        /* 自定义滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e11d48;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #be123c;
+        }
+
+        /* 动感背景网格 */
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* 呼吸发光按钮特效 */
+        .btn-glow {
+            position: relative;
+        }
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: inherit;
+            background: linear-gradient(45deg, #f43f5e, #fb923c, #f43f5e);
+            background-size: 200% 200%;
+            z-index: -1;
+            filter: blur(15px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            animation: glowingButton 3s ease infinite;
+        }
+        .btn-glow:hover::before {
+            opacity: 0.8;
+        }
+        @keyframes glowingButton {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 悬浮动画 */
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* 滚动出现特效 (Scroll Reveal) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 玻璃拟态卡片 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        /* FAQ 动画 */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 1.5rem;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            color: #e11d48;
+        }
+        
+        /* 图片遮罩悬停特效 */
+        .img-hover-zoom {
+            overflow: hidden;
+        }
+        .img-hover-zoom img {
+            transition: transform 0.5s ease;
+        }
+        .img-hover-zoom:hover img {
+            transform: scale(1.1);
+        }
+        .img-hover-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .img-hover-zoom:hover .img-hover-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-brand-50 text-gray-800 antialiased overflow-x-hidden relative">
+
+    <!-- 背景装饰气泡 -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[30rem] h-[30rem] bg-orange-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="animation-delay: 2s;"></div>
+    </div>
+
+    <header class="fixed top-0 w-full z-50 glass-card transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-orange-400 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="ph-fill ph-play-circle text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-900 tracking-tight">红果短剧 PC端</span>
+            </a>
+            <nav class="hidden md:flex gap-8 items-center font-medium text-gray-600">
+                <a href="#hero" class="hover:text-brand-600 transition-colors">首页</a>
+                <a href="#tutorial" class="hover:text-brand-600 transition-colors">使用教程</a>
+                <a href="#popular" class="hover:text-brand-600 transition-colors">热门短剧</a>
+                <a href="#faq" class="hover:text-brand-600 transition-colors">常见问题</a>
+                <a href="#download" class="px-5 py-2 rounded-full bg-brand-100 text-brand-600 hover:bg-brand-600 hover:text-white transition-all shadow-sm">立即下载</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="relative pt-40 pb-20 lg:pt-48 lg:pb-32 bg-grid-pattern">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal z-10 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-600 text-sm font-bold mb-6 border border-brand-200">
+                    <span class="relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-500 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-600"></span>
+                    </span>
+                    全新发布
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-gray-900">
+                    大屏追剧，<br/>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-orange-500">沉浸体验更震撼</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    红果短剧电脑版官方安装包，海量热门短剧高清免费看。告别小屏幕，一键开启你的专属家庭影院体验。
+                </p>
+                
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-10">
+                    <div class="flex items-center gap-2 text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-100"><i class="ph ph-film-strip text-brand-500 text-xl"></i> 海量短剧</div>
+                    <div class="flex items-center gap-2 text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-100"><i class="ph ph-prohibit text-brand-500 text-xl"></i> 高清无广告</div>
+                    <div class="flex items-center gap-2 text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-100"><i class="ph ph-gift text-brand-500 text-xl"></i> 完全免费</div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                    <a href="https://pan.quark.cn/s/d75da39da877" target="_blank" class="btn-glow group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-600 to-brand-500 text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl shadow-brand-500/30 hover:-translate-y-1 transition-all w-full sm:w-auto">
+                        <i class="ph-bold ph-download-simple text-2xl group-hover:animate-bounce"></i>
+                        立即下载 (夸克网盘)
+                    </a>
+                    <span class="text-sm text-gray-500 flex items-center gap-1">
+                        <i class="ph ph-windows-logo"></i> 支持 Win 7/10/11
+                    </span>
+                </div>
+            </div>
+
+            <div class="reveal relative hidden lg:block animate-float">
+                <!-- 装饰光环 -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-brand-500/20 to-transparent rounded-full blur-3xl -z-10"></div>
+                <img class="w-full h-auto rounded-2xl shadow-[0_20px_50px_rgba(225,29,72,0.15)] border-4 border-white object-cover transform rotate-2 hover:rotate-0 transition-transform duration-500" 
+                     src="https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/2026-10-17_090104.webp" 
+                     alt="红果短剧PC端软件界面展示" />
+            </div>
+        </div>
+    </section>
+
+    <section id="tutorial" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold mb-4">轻松三步，开启大屏追剧</h2>
+                <p class="text-gray-500">傻瓜式操作，只需一分钟即可安装完毕</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- 连线装饰 -->
+                <div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-brand-100 via-brand-300 to-brand-100 -translate-y-1/2 z-0"></div>
+
+                <div class="reveal glass-card p-8 rounded-3xl text-center relative z-10 hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-2xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-50 transition-all">
+                        <i class="ph-duotone ph-download-simple text-4xl text-brand-600"></i>
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-10 h-10 bg-brand-100 text-brand-600 rounded-full font-black text-xl flex items-center justify-center border-4 border-white shadow-sm">1</div>
+                    <h3 class="text-xl font-bold mb-3">下载安装包</h3>
+                    <p class="text-gray-600">点击页面下载按钮，获取红果短剧PC版最新官方安全安装程序。</p>
+                </div>
+
+                <div class="reveal glass-card p-8 rounded-3xl text-center relative z-10 hover:-translate-y-2 transition-transform duration-300 group" style="transition-delay: 100ms;">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-2xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-50 transition-all">
+                        <i class="ph-duotone ph-laptop text-4xl text-brand-600"></i>
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-10 h-10 bg-brand-100 text-brand-600 rounded-full font-black text-xl flex items-center justify-center border-4 border-white shadow-sm">2</div>
+                    <h3 class="text-xl font-bold mb-3">运行安装程序</h3>
+                    <p class="text-gray-600">双击下载好的安装包，按照极简向导提示，一键完成软件安装。</p>
+                </div>
+
+                <div class="reveal glass-card p-8 rounded-3xl text-center relative z-10 hover:-translate-y-2 transition-transform duration-300 group" style="transition-delay: 200ms;">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-2xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-50 transition-all">
+                        <i class="ph-duotone ph-popcorn text-4xl text-brand-600"></i>
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-10 h-10 bg-brand-100 text-brand-600 rounded-full font-black text-xl flex items-center justify-center border-4 border-white shadow-sm">3</div>
+                    <h3 class="text-xl font-bold mb-3">启动看剧</h3>
+                    <p class="text-gray-600">在桌面找到红果短剧快捷方式，双击打开，畅享万部免费短剧。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12 reveal">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2">海量热门短剧</h2>
+                    <p class="text-gray-500">都市、逆袭、甜宠、古装... 应有尽有，随时追更</p>
+                </div>
+                <div class="hidden sm:flex gap-2">
+                    <button class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-brand-50 hover:text-brand-600 transition-colors"><i class="ph-bold ph-caret-left"></i></button>
+                    <button class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-brand-50 hover:text-brand-600 transition-colors"><i class="ph-bold ph-caret-right"></i></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <!-- 剧集卡片列表 (使用循环生成结构相同的内容) -->
+                <script>
+                    const images = [
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(8).jpg",
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(7).jpg",
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(6).jpg",
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(5).jpg",
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(4).jpg",
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(3).jpg",
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(2).jpg",
+                        "https://cdn.jsdelivr.net/gh/asy666/tuchuang/img/001%20(1).jpg"
+                    ];
+                    images.forEach((img, index) => {
+                        document.write(`
+                            <div class="reveal img-hover-zoom rounded-xl relative cursor-pointer shadow-md group bg-gray-200" style="transition-delay: ${index * 50}ms">
+                                <img class="w-full aspect-[3/4] object-cover" src="${img}" alt="热门短剧${index+1}" loading="lazy"/>
+                                <div class="img-hover-overlay absolute inset-0 flex flex-col justify-end p-4">
+                                    <div class="w-12 h-12 bg-brand-600/90 rounded-full flex items-center justify-center text-white mb-2 shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                        <i class="ph-fill ph-play text-xl"></i>
+                                    </div>
+                                    <p class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">立即播放</p>
+                                </div>
+                            </div>
+                        `);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold mb-4">常见问题解答</h2>
+                <p class="text-gray-500">遇到问题？这里有你想知道的答案</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <div class="reveal faq-item glass-card rounded-2xl overflow-hidden border border-gray-100 shadow-sm cursor-pointer hover:border-brand-200 transition-colors">
+                    <div class="faq-question flex justify-between items-center p-6 text-lg font-bold text-gray-800">
+                        <div class="flex items-center gap-3">
+                            <span class="text-brand-500 text-2xl font-black">Q.</span>
+                            红果短剧 PC 端和手机端账号互通吗？
+                        </div>
+                        <i class="ph-bold ph-plus faq-icon text-xl text-gray-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600 leading-relaxed bg-gray-50/50">
+                        <p class="pt-2 border-t border-gray-100">是的，完全互通。您可以在 PC 端使用手机号或通过手机APP扫码登录，观看记录、收藏夹内容、会员状态均实时同步，实现跨端无缝追剧。</p>
+                    </div>
+                </div>
+
+                <div class="reveal faq-item glass-card rounded-2xl overflow-hidden border border-gray-100 shadow-sm cursor-pointer hover:border-brand-200 transition-colors">
+                    <div class="faq-question flex justify-between items-center p-6 text-lg font-bold text-gray-800">
+                        <div class="flex items-center gap-3">
+                            <span class="text-brand-500 text-2xl font-black">Q.</span>
+                            下载后安装失败 / 报错怎么办？
+                        </div>
+                        <i class="ph-bold ph-plus faq-icon text-xl text-gray-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600 leading-relaxed bg-gray-50/50">
+                        <p class="pt-2 border-t border-gray-100">请检查您的电脑系统是否为 Windows 7/10/11，并确保磁盘（尤其是C盘）空间充足。若遇到杀毒软件（如360、火绒等）误报拦截，请选择“允许放行”或暂时退出杀毒软件后重新安装。</p>
+                    </div>
+                </div>
+
+                <div class="reveal faq-item glass-card rounded-2xl overflow-hidden border border-gray-100 shadow-sm cursor-pointer hover:border-brand-200 transition-colors">
+                    <div class="faq-question flex justify-between items-center p-6 text-lg font-bold text-gray-800">
+                        <div class="flex items-center gap-3">
+                            <span class="text-brand-500 text-2xl font-black">Q.</span>
+                            红果短剧 PC 版是完全免费的吗？
+                        </div>
+                        <i class="ph-bold ph-plus faq-icon text-xl text-gray-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600 leading-relaxed bg-gray-50/50">
+                        <p class="pt-2 border-t border-gray-100">是的！红果短剧主打免费提供高质量的正版短剧内容。海量精彩短剧无需开通VIP会员，全部集数免费畅看，绝不套路收费。</p>
+                    </div>
+                </div>
+
+                <div class="reveal faq-item glass-card rounded-2xl overflow-hidden border border-gray-100 shadow-sm cursor-pointer hover:border-brand-200 transition-colors">
+                    <div class="faq-question flex justify-between items-center p-6 text-lg font-bold text-gray-800">
+                        <div class="flex items-center gap-3">
+                            <span class="text-brand-500 text-2xl font-black">Q.</span>
+                            支持苹果 Mac 系统吗？
+                        </div>
+                        <i class="ph-bold ph-plus faq-icon text-xl text-gray-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600 leading-relaxed bg-gray-50/50">
+                        <p class="pt-2 border-t border-gray-100">当前版本主要完美兼容 Windows 系列（Win 7/10/11 的 32位及64位系统）。Mac 版本正在紧急开发中，敬请期待！Mac 用户暂可通过虚拟机安装体验。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-24 relative overflow-hidden bg-gray-900 text-white">
+        <!-- 背景特效 -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand-600 rounded-full mix-blend-screen filter blur-[100px] opacity-40"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-orange-500 rounded-full mix-blend-screen filter blur-[100px] opacity-30"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 reveal">
+            <i class="ph-fill ph-monitor-play text-6xl text-brand-400 mb-6"></i>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">立即获取红果短剧电脑版</h2>
+            <p class="text-xl text-gray-300 mb-10">现在下载，开启你的PC端沉浸式免费追剧新体验</p>
+            
+            <a href="https://pan.quark.cn/s/d75da39da877" target="_blank" class="btn-glow group inline-flex items-center gap-3 bg-brand-500 hover:bg-brand-400 text-white px-10 py-5 rounded-full text-xl font-bold shadow-[0_0_40px_rgba(225,29,72,0.4)] transition-all">
+                <i class="ph-bold ph-download-simple text-2xl"></i>
+                下载最新安装包 (夸克网盘)
+            </a>
+            
+            <div class="mt-8 flex flex-col items-center gap-2 text-sm text-gray-400">
+                <div class="flex items-center gap-4">
+                    <span><i class="ph ph-info"></i> 版本: v1.2.0</span>
+                    <span><i class="ph ph-hard-drives"></i> 大小: 约 85 MB</span>
+                    <span><i class="ph ph-calendar-blank"></i> 更新: 最新</span>
+                </div>
+                <p class="mt-2 text-gray-500">备用提示：如链接失效，请刷新本网页重试。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-gray-500 py-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- 友情链接 -->
+            <div class="mb-8 pb-8 border-b border-gray-800/60 text-center md:text-left">
+                <h4 class="text-gray-400 font-semibold mb-4 flex items-center justify-center md:justify-start gap-2">
+                    <i class="ph-bold ph-link-simple"></i> 友情链接
+                </h4>
+                <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3 text-sm">
+                    <a href="https://www.souyuanzhan.com/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors">搜源站</a>
+                    <a href="https://youyuanvip.com/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors">优源网</a>
+                    <a href="https://viptu.cn/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors">资源汇</a>
+                    <a href="https://tujifang.com/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors">图集坊</a>
+                    <a href="https://dh.fuliwu.vip/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors">优选导航</a>
+                </div>
+            </div>
+
+            <!-- 版权声明 -->
+            <div class="text-center text-sm space-y-2">
+                <p>免责声明：本站提供红果短剧PC端安装包下载及使用教程，所有软件资源及短剧内容版权归官方所有。</p>
+                <p>&copy; 2023-2024 红果短剧PC版下载站. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 手风琴效果
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                const isActive = parent.classList.contains('active');
+
+                // 关闭其他展开的项
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+
+                // 展开当前项
+                if (!isActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+
+        // 导航栏滚动变色
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md', 'bg-white/90');
+                navbar.classList.remove('glass-card');
+            } else {
+                navbar.classList.remove('shadow-md', 'bg-white/90');
+                navbar.classList.add('glass-card');
+            }
+        });
+
+        // 滚动出现特效 (Scroll Reveal)
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50; // 元素距离视口多少时触发动画
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // 初始执行一次
+    </script>
+</body>
+</html>
